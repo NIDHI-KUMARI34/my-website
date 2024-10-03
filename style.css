@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #e78709;
+}
+
+header {
+    background: #251608;
+    color: rgb(89, 226, 9);
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: rgb(241, 219, 21);
+    text-decoration: none;
+}
+
+.hero {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    color: rgb(12, 4, 4);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.classes {
+    padding: 40px 20px;
+    background: #141407;
+}
+
+.class-section {
+    margin-bottom: 40px;
+    background: #f1ba73;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.class-section h3 {
+    background-color: #0ab118;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subjects {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.subject {
+    width: 45%;
+}
+
+.subject h4 {
+    text-align: center;
+    color: #104cf0da;
+    margin-bottom: 10px;
+}
+
+.subject ul {
+    list-style-type: none;
+}
+
+.subject ul li {
+    margin-bottom: 10px;
+}
+
+.subject a {
+    text-decoration: none;
+    color: #333;
+    background: #08090a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.subject a:hover {
+    background: #3b7bc4;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
