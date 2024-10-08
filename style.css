@@ -119,6 +119,40 @@ footer {
     margin: 0 10px;
 }
 
+   /* General Reset */
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            background-color: #effaf7;
+            font-family: Arial, sans-serif;
+            color: #353755;
+            padding: 20px;
+        }
+
+        /* Banner Section */
+        #banner {
+            background-color: #060a04;
+            color: #FFFFFF;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        #banner p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
 
 
     /* Responsive Card Container */
