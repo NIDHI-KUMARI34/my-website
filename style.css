@@ -119,9 +119,10 @@ footer {
     margin: 0 10px;
 }
 
-   /* General Reset */
+  <style>
+        /* General Reset */
         * {
-            margin: 0px;
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
@@ -154,8 +155,7 @@ footer {
             font-weight: 300;
         }
 
-
-    /* Responsive Card Container */
+        /* Responsive Card Container */
         .card-container {
             display: flex;
             justify-content: space-around;
@@ -181,7 +181,7 @@ footer {
 
         .card img {
             width: 100%;
-            height: 100px;
+            height: 300px;
             object-fit: cover;
         }
 
@@ -240,9 +240,14 @@ footer {
             }
         }
 
+    </style>
+<body>
 
-<style>
-  
+    <!-- Banner Section -->
+    <div id="banner">
+        <h1>Welcome to the Learning Platform</h1>
+        <p>Your gateway to knowledge</p>
+    </div>
 
     <!-- Card Section -->
     <div class="card-container">
@@ -291,6 +296,10 @@ footer {
         </div>
 
     </div>
-</style>
+
 </body>
 </html>
+
+
+
+
