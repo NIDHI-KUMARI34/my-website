@@ -124,12 +124,11 @@ footer {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Horizontal Cards</title>
-    
-  <style>
+    <style>
         /* General Reset */
         * {
-            margin: 0;
-            padding: 0;
+            margin: 30px;
+            padding: 10px;
             box-sizing: border-box;
         }
 
@@ -163,14 +162,14 @@ footer {
 
         /* Responsive Card Container */
         .card-container {
-            width:100%;
-            height:auto;
-            overflow:visible;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             gap: 20px;
         }
+        
+        
 
         /* Card Styles */
         .card {
@@ -180,10 +179,15 @@ footer {
             position: relative;
             text-align: center;
             flex: 1 1 calc(33.33% - 40px); /* 3 cards per row for large screens */
-            min-width: 250px; /* Ensure cards don't get too narrow */
+            min-width: 250px;
+            max-width: 350px; /* Optional: Control the maximum size of the card */
             transition: transform 0.3s ease;
+            overflow: hidden; /* Ensure content stays inside the card */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between;
         }
-
+        
         .card-image {
             position: relative;
         }
@@ -194,17 +198,14 @@ footer {
             object-fit: cover;
         }
 
-        /* Text overlay on image */
-        .card-text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
-            color: #FFFFFF;
-            padding: 10px;
-            text-align: center;
-        }
+      /* Text overlay fix */
+.card-text {
+    background-color: #fff; /* Remove background transparency */
+    padding: 20px; /* Add padding for spacing */
+    position: relative;
+    color: #353755;
+}
+
 
         .card h3 {
             font-size: 24px;
