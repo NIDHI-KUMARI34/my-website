@@ -121,43 +121,7 @@ footer {
 
 
 
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* General Styles */
-        body {
-            background-color: #effaf7;
-            font-family: Arial, sans-serif;
-            color: #353755;
-            padding: 20px;
-        }
-
-        /* Banner Section */
-        #banner {
-            background-color: #060a04;
-            color: #FFFFFF;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        #banner h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        #banner p {
-            font-size: 20px;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-
-        /* Responsive Card Container */
+    /* Responsive Card Container */
         .card-container {
             display: flex;
             justify-content: space-around;
@@ -172,7 +136,7 @@ footer {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
             text-align: center;
-            flex: 1 1 calc(33.33% - 50px); /* 3 cards per row for large screens */
+            flex: 1 1 calc(33.33% - 40px); /* 3 cards per row for large screens */
             min-width: 250px; /* Ensure cards don't get too narrow */
             transition: transform 0.3s ease;
         }
@@ -242,13 +206,9 @@ footer {
             }
         }
 
-    </style>
 
-    <!-- Banner Section -->
-    <div id="banner">
-        <h1>Welcome to the Learning Platform</h1>
-        <p>Your gateway to knowledge</p>
-    </div>
+<style>
+  
 
     <!-- Card Section -->
     <div class="card-container">
@@ -297,6 +257,6 @@ footer {
         </div>
 
     </div>
-
+</style>
 </body>
 </html>
