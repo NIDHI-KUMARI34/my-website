@@ -118,3 +118,259 @@ footer {
 .socials li {
     margin: 0 10px;
 }
+
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Text overlay on image */
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark background with opacity for readability */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.card .btn {
+    padding: 10px 20px;
+    background-color: #5BD3C7;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card .btn:hover {
+    background-color: #42f10d;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E0E4EE;
+    color: #353755;
+}
+
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0E4EE;
+    font-family: Arial, sans-serif;
+    color: #353755;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0E4EE;
+    font-family: Arial, sans-serif;
+    color: #353755;
+}
+
+/* Banner Section */
+#banner {
+    background-color: #060a04;
+    color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#banner p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* Chapters Section */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #353755;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Cards */
+.card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 23%;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 4px solid #5BD3C7; /* Add a colored border for emphasis */
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #5BD3C7;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #353755;
+    cursor: pointer;
+}
+
+/* Hover Effect on Card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+/* Banner Image */
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire banner */
+}
+
+/* Overlay Text on the Banner */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e2cab7;
+    text-align: center;
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
