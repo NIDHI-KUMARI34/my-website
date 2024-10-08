@@ -136,6 +136,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
+     flex: 1 1 calc(33.33% - 40px) ;
 }
 
 .card-image {
