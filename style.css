@@ -163,6 +163,9 @@ footer {
 
         /* Responsive Card Container */
         .card-container {
+            width:100%;
+            height:auto;
+            overflow:visible;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
