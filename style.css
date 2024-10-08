@@ -120,258 +120,183 @@ footer {
 }
 
 
-/* Card Container */
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
-/* Card Styles */
-.card {
-    width: 30%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    text-align: center;
-     flex: 1 1 calc(33.33% - 40px) ;
-}
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.card-image {
-    position: relative;
-}
+        /* General Styles */
+        body {
+            background-color: #effaf7;
+            font-family: Arial, sans-serif;
+            color: #353755;
+            padding: 20px;
+        }
 
-.card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+        /* Banner Section */
+        #banner {
+            background-color: #060a04;
+            color: #FFFFFF;
+            padding: 50px 0;
+            text-align: center;
+        }
 
-/* Text overlay on image */
-.card-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark background with opacity for readability */
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-}
+        #banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
 
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        #banner p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
 
-.card p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+        /* Responsive Card Container */
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-/* Button styles */
-.card .btn {
-    padding: 10px 20px;
-    background-color: #5BD3C7;
-    color: #FFFFFF;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-}
+        /* Card Styles */
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+            flex: 1 1 calc(33.33% - 40px); /* 3 cards per row for large screens */
+            min-width: 250px; /* Ensure cards don't get too narrow */
+            transition: transform 0.3s ease;
+        }
 
-.card .btn:hover {
-    background-color: #36ce08;
-}
+        .card-image {
+            position: relative;
+        }
 
-/* Card Hover Effect */
-.card:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
-}
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
 
+        /* Text overlay on image */
+        .card-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
 
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-body {
-    background-color: white;
-    color: #353755;
-}
+        .card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
 
-/* General Reset and Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Button styles */
+        .card .btn {
+            padding: 10px 20px;
+            background-color: #5BD3C7;
+            color: #FFFFFF;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-body {
-    background-color: #effaf7;
-    font-family: Arial, sans-serif;
-    color: #353755;
-}
+        .card .btn:hover {
+            background-color: #36ce08;
+        }
 
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Card Hover Effect */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
 
-body {
-    background-color: #E0E4EE;
-    font-family: Arial, sans-serif;
-    color: #353755;
-}
+        /* Media Queries for responsiveness */
+        @media (max-width: 1024px) {
+            .card {
+                flex: 1 1 calc(50% - 40px); /* 2 cards per row on tablets */
+            }
+        }
 
-/* Banner Section */
-#banner {
-    background-color: #060a04;
-    color: #FFFFFF;
-    padding: 50px 0;
-    text-align: center;
-}
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%; /* 1 card per row on mobile */
+            }
+        }
 
-#banner h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
+    </style>
 
-#banner p {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: 300;
-}
+    <!-- Banner Section -->
+    <div id="banner">
+        <h1>Welcome to the Learning Platform</h1>
+        <p>Your gateway to knowledge</p>
+    </div>
 
-/* Chapters Section */
-.section {
-    padding: 50px 0;
-    text-align: center;
-}
+    <!-- Card Section -->
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/300" alt="Card Image 1">
+            </div>
+            <div class="card-text">
+                <h3>Card 1</h3>
+                <p>This is the content of card 1.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
 
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #0e0e0f;
-}
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/300" alt="Card Image 2">
+            </div>
+            <div class="card-text">
+                <h3>Card 2</h3>
+                <p>This is the content of card 2.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
 
-/* Card Container */
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/300" alt="Card Image 3">
+            </div>
+            <div class="card-text">
+                <h3>Card 3</h3>
+                <p>This is the content of card 3.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
 
-/* Individual Cards */
-.card {
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    width: 23%;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    position: relative;
-    text-align: center;
-}
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/300" alt="Card Image 4">
+            </div>
+            <div class="card-text">
+                <h3>Card 4</h3>
+                <p>This is the content of card 4.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
 
-.card-image {
-    position: relative;
-    height: 250px;
-}
+    </div>
 
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-bottom: 4px solid #5BD3C7; /* Add a colored border for emphasis */
-}
-
-.card-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Button Styles */
-.btn {
-    background-color: #5BD3C7;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #353755;
-    cursor: pointer;
-}
-
-/* Hover Effect on Card */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Banner Section */
-.banner {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Adjust the height as needed */
-    overflow: hidden;
-}
-
-/* Banner Image */
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire banner */
-}
-
-/* Overlay Text on the Banner */
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #e2cab7;
-    text-align: center;
-}
-
-.overlay-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.overlay-text p {
-    font-size: 20px;
-    font-weight: 300;
-}
-
+</body>
+</html>
