@@ -1,313 +1,149 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #a76107;
+    background-color: #0d0d0e;
+    color: #333;
+    line-height: 1;
+    margin-right: auto ;
 }
 
-header {
-    background: #251608;
-    color: rgb(89, 226, 9);
-    padding: 10px 0;
+.header {
+    background-color: #4CAF50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.logo h1 {
+    color: #fff;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
 }
 
-nav ul li {
+.navbar ul li {
     margin-left: 20px;
 }
 
-nav a {
-    color: rgb(241, 219, 21);
+.navbar ul li a {
+    color: #fff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
 }
 
 .hero {
-    background: url('your-background-image.jpg') no-repeat center center/cover;
-    color: rgb(12, 4, 4);
+    background-image: url('images/hero_university.jpg');
+    background-size: cover;
+    color: #fff;
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
 }
 
-.classes {
-    padding: 40px 20px;
-    background: #141407;
+.hero h2 {
+    font-size: 3rem;
 }
 
-.class-section {
-    margin-bottom: 40px;
-    background:white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.hero p {
+    font-size: 1.5rem;
 }
 
-.class-section h3 {
-    background-color: #0ab118;
-    color: white;
-    padding: 10px;
+.cta {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #ff3e30;
+}
+
+.notes-section, .pyqs-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
-.subjects {
+.notes-section h2, .pyqs-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Horizontal Scroll Container */
+.scroll-container {
     display: flex;
-    justify-content: space-around;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+}
+
+.scroll-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Fixed width */
+    flex-shrink: 0; /* Prevent shrinking */
+    overflow: hidden;
+    text-align: center;
+}
+
+.scroll-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.scroll-card h3 {
+    padding: 10px;
+}
+
+.scroll-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.scroll-card .btn:hover {
+    background-color: #45a049;
+}
+
+/* Customize scrollbar */
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
     margin-top: 20px;
 }
-
-.subject {
-    width: 45%;
-}
-
-.subject h4 {
-    text-align: center;
-    color: #104cf0da;
-    margin-bottom: 10px;
-}
-
-.subject ul {
-    list-style-type: none;
-}
-
-.subject ul li {
-    margin-bottom: 10px;
-}
-
-.subject a {
-    text-decoration: none;
-    color: #333;
-    background: #08090a;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-}
-
-.subject a:hover {
-    background: #3b7bc4;
-}
-
-footer {
-    background:green;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.socials {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.socials li {
-    margin: 0 10px;
-}
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Horizontal Cards</title>
-    
-  <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* General Styles */
-        body {
-            background-color: #effaf7;
-            font-family: Arial, sans-serif;
-            color: #353755;
-            padding: 20px;
-        }
-
-        /* Banner Section */
-        #banner {
-            background-color: #060a04;
-            color: #FFFFFF;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        #banner h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        #banner p {
-            font-size: 20px;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-
-        /* Responsive Card Container */
-        .card-container {
-            width:100%;
-            height:auto;
-            overflow:visible;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        /* Card Styles */
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            text-align: center;
-            flex: 1 1 calc(33.33% - 40px); /* 3 cards per row for large screens */
-            min-width: 250px; /* Ensure cards don't get too narrow */
-            transition: transform 0.3s ease;
-        }
-
-        .card-image {
-            position: relative;
-        }
-
-        .card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        /* Text overlay on image */
-        .card-text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.5); /* Dark background for readability */
-            color: #FFFFFF;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .card h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        /* Button styles */
-        .card .btn {
-            padding: 10px 20px;
-            background-color: #5BD3C7;
-            color: #FFFFFF;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .card .btn:hover {
-            background-color: #36ce08;
-        }
-
-        /* Card Hover Effect */
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 1024px) {
-            .card {
-                flex: 1 1 calc(50% - 40px); /* 2 cards per row on tablets */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .card {
-                flex: 1 1 100%; /* 1 card per row on mobile */
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-    <!-- Banner Section -->
-    <div id="banner">
-        <h1>Welcome to the Learning Platform</h1>
-        <p>Your gateway to knowledge</p>
-    </div>
-
-    <!-- Card Section -->
-    <div class="card-container">
-        <div class="card">
-            <div class="card-image">
-                <img src="https://via.placeholder.com/300" alt="Card Image 1">
-            </div>
-            <div class="card-text">
-                <h3>Card 1</h3>
-                <p>This is the content of card 1.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://via.placeholder.com/300" alt="Card Image 2">
-            </div>
-            <div class="card-text">
-                <h3>Card 2</h3>
-                <p>This is the content of card 2.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://via.placeholder.com/300" alt="Card Image 3">
-            </div>
-            <div class="card-text">
-                <h3>Card 3</h3>
-                <p>This is the content of card 3.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="https://via.placeholder.com/300" alt="Card Image 4">
-            </div>
-            <div class="card-text">
-                <h3>Card 4</h3>
-                <p>This is the content of card 4.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-
-    </div>
-
-</body>
-</html>
