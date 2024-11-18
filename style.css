@@ -19,6 +19,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+element.style{
+    color:beige;}
 
 .logo h1 {
     color: #fff;
