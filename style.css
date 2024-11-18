@@ -47,7 +47,7 @@ body {
 }
 
 .hero {
-    background-image: url('images/hero_university.jpg');
+    background-color:black;
     background-size: cover;
     color: #fff;
     text-align: center;
